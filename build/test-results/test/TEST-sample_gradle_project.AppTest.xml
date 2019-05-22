@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sample_gradle_project.AppTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-05-22T07:20:47" hostname="Niranjans-MacBook-Pro.local" time="0.007">
+  <properties/>
+  <testcase name="testDnaToRnaConversionWrongValueThree" classname="sample_gradle_project.AppTest" time="0.006"/>
+  <testcase name="testDnaToRnaConversionWrongValueOne" classname="sample_gradle_project.AppTest" time="0.0"/>
+  <testcase name="testDnaToRnaConversionWrongValueTwo" classname="sample_gradle_project.AppTest" time="0.0"/>
+  <testcase name="testAppHasAGreeting" classname="sample_gradle_project.AppTest" time="0.0"/>
+  <testcase name="testDnaToRnaConversionCorrectValue" classname="sample_gradle_project.AppTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
