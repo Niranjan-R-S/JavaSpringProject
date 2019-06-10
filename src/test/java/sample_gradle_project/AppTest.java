@@ -5,7 +5,6 @@ package sample_gradle_project;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import java.util.*;
 
 public class AppTest {
     @Test public void testAppHasAGreeting() {
@@ -13,43 +12,8 @@ public class AppTest {
         assertEquals("Hello world.", classUnderTest.getGreeting());
     }
 
-    @Test public void testDnaToRnaConversionCorrectValue(){
-      App classUnderTest = new App();
-      HashMap< String,String> hm = new HashMap< String,String>();
-      hm.put("dnaValue", "CGTA");
-      StringBuilder rnaValue = new StringBuilder("GCAU");
-      HashMap< String,StringBuilder> finalValue = new HashMap< String,StringBuilder>();
-      finalValue.put("rnaStrand", rnaValue);
-      assertEquals(finalValue.get("rnaStrand").toString(), classUnderTest.convertDnaToRna(hm).get("rnaStrand").toString());
-    }
-
-    @Test public void testDnaToRnaConversionWrongValueOne(){
-      App classUnderTest = new App();
-      HashMap< String,String> hm = new HashMap< String,String>();
-      hm.put("dnaValue", "CGTF");
-      StringBuilder rnaValue = new StringBuilder("GCAN");
-      HashMap< String,StringBuilder> finalValue = new HashMap< String,StringBuilder>();
-      finalValue.put("rnaStrand", rnaValue);
-      assertEquals(finalValue.get("rnaStrand").toString(), classUnderTest.convertDnaToRna(hm).get("rnaStrand").toString());
-    }
-
-    @Test public void testDnaToRnaConversionWrongValueTwo(){
-      App classUnderTest = new App();
-      HashMap< String,String> hm = new HashMap< String,String>();
-      hm.put("dnaValue", "CnTl");
-      StringBuilder rnaValue = new StringBuilder("GNAN");
-      HashMap< String,StringBuilder> finalValue = new HashMap< String,StringBuilder>();
-      finalValue.put("rnaStrand", rnaValue);
-      assertEquals(finalValue.get("rnaStrand").toString(), classUnderTest.convertDnaToRna(hm).get("rnaStrand").toString());
-    }
-
-    @Test public void testDnaToRnaConversionWrongValueThree(){
-      App classUnderTest = new App();
-      HashMap< String,String> hm = new HashMap< String,String>();
-      hm.put("dnaValue", "CnTlkk");
-      StringBuilder rnaValue = new StringBuilder("GNANNN");
-      HashMap< String,StringBuilder> finalValue = new HashMap< String,StringBuilder>();
-      finalValue.put("rnaStrand", rnaValue);
-      assertEquals(finalValue.get("rnaStrand").toString(), classUnderTest.convertDnaToRna(hm).get("rnaStrand").toString());
+    @Test public void testGetNameAndAge() {
+        App classUnderTest = new App();
+        assertEquals("My name is Sample java application and my age is young as you are", classUnderTest.getNameAndAge());
     }
 }
